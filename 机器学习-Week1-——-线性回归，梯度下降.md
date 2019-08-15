@@ -5,7 +5,7 @@
 这次主要介绍一下机器学习的基础知识，线性回归模型，损失函数，梯度下降法。
 
 1. 机器学习简单介绍
-2. 
+
 关于机器学习（Machine Learning）有很多不同的定义，课程里面采用的是 Tom Mitchell 的定义：
 
 > A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E
@@ -16,7 +16,7 @@
 关于聚类问题，一个例子是谷歌新闻，比如你在谷歌新闻下面搜当天的新闻：“Gmail推出新功能”，那么你会看到一个“Gmail推出新功能”的大标题下面，聚合了很多来自不同媒体的相关报导，那么谷歌新闻是怎么把这些内容都归到一起的呢，就是通过聚类算法。事先并没有人告诉它应该怎么归类，它就是在大量的新闻中，使用聚类算法，进行自动的归类。
 
 2. 线性回归
-3. 
+
 **线性回归（Linear Regression）**是一个很简单的回归算法，使用它我们可以快速地了解很多基础知识。首先看一个只有一个特征值的线性回归问题，给定以下数据：
 
 |x|y|
@@ -66,7 +66,7 @@ $$\theta_n = \theta_n-\alpha\frac{\partial J(\theta)}{\partial \theta_n}$$
 $$\theta_n = \theta_n-\alpha\frac{1}{m}\sum_{i=1}^m(h_\theta(x_i)-y_i)$$
 
 4. 学习率
-5. 
+
 在梯度下降法的更新公式中，有一个参数$\alpha$，它控制着每次更新的大小，也叫**学习率（Learning Rate）**，是手动设置的。需要注意的是，如果学习率设置得过小，那么每次更新只会下降很小的一段距离，想要达到最优解就会花费更多的步骤，所以运行的时间会大大增加；如果学习率设置得过大，那么有可能更新之后的$\theta_n$会使得$J(\theta)$直接跃过了最小值点，甚至变得比更新之前的值更大，像这样：
 
 ![Learning rate too small or too large](_v_images/20190814181035206_6706.png)
